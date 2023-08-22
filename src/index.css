@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,105 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.nav-link {
+  color: red !important;
+}
+.navbar-brand {
+  color: red !important;
+}
+h1 {
+  font-size: 20px !important;
+}
+.flex-container {
+  display: flex !important;
+}
+.btn {
+  background-color: red !important;
+  color: white !important;
+}
+select {
+  box-shadow: none !important;
+  border-color: black !important;
+}
+.fa-plus {
+  color: blue !important;
+  margin: 5px;
+}
+.fa-minus {
+  color: red !important;
+  margin: 5px;
+}
+.fa-trash {
+  color: red !important;
+}
+.social-icon:hover {
+  color: red !important;
+}
+input{
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
+.homescreen {
+  padding: 20px;
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.33% - 20px); /* Adjusted to account for padding */
+  padding: 10px; /* Add padding to the boxes */
+  box-sizing: border-box; /* Include padding in the total width */
+}
+
+/* Style for the square box */
+.square-box {
+  width: 100%;
+  padding-top: 100%; /* Create a square box based on padding-top to width ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style for the image inside the square box */
+.square-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio while covering the entire box */
+}
+
+.pizza-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+  position: relative; /* For positioning the button */
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.dropdown {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Style for the Add to Cart button */
+.add-to-cart-button {
+  position: absolute;
+  bottom: 10px;
+  left: 15px; /* Adjust as needed */
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
